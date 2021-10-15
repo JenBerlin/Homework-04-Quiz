@@ -17,6 +17,7 @@ html {
 nav {
   color: #8403ce;
   height: 50px;
+  font-size: 30px;
   font-weight: bolder;
   align-items: center;
   display: flex;
@@ -28,7 +29,7 @@ li {
   list-style-type: none;
 }
 
-.landing-page {
+#landing-page {
   text-align: center;
   align-items: center;
 }
@@ -61,7 +62,9 @@ p {
   box-shadow: 2px 2px 2px 2px yellow;
 }
 
-#question-container,
+#question-container1,
+#question-container2,
+#question-container3,
 #email-container,
 #score-container {
   margin: 0 200px 0 200px;

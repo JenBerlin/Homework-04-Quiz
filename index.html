@@ -11,7 +11,7 @@
     <header>
         <nav>
             <li class="score">View Highscore</li>
-            <li class="time">Time:</li>
+            <li class="time">Time: 0</li>
         </nav>
     </header>
 
@@ -19,19 +19,60 @@
         <div class="landing-page">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
-            <button class="btstyle">Start Quiz</button>
+            <button id="start" class="btstyle">Start Quiz</button>
         </div>
     </section>
 
-    <section class="q1">
-
+    <section>
+        <div id=question-container class="hide">
+            <h1 id="q1">Commonly used data types DO NOT include:</h1>
+            <div class="qblock">
+                <button id="a1-1" class="btstyle">1. strings</button>
+                <button id="a1-2" class="btstyle">2. booleans</button>
+                <button id="a1-3" class="btstyle">3. alerts</button>
+                <button id="a1-4" class="btstyle">4. numbers</button>
+            </div>
+            <h1 id="q2">The condition in an if / else statement is enclosed within _________.</h1>
+            <div class="qblock">
+                <button id="a2-1" class="btstyle">1. quotes</button>
+                <button id="a2-2" class="btstyle">2. curly breackets</button>
+                <button id="a2-3" class="btstyle">3. parentheses</button>
+                <button id="a2-4" class="btstyle">4. square brackets</button>
+            </div>
+            <h1 id="q3">Arrays in JavaScript can be used to store _________.</h1>
+            <div class="qblock">
+                <button id="a3-1" class="btstyle">1. numbers and strings</button>
+                <button id="a3-2" class="btstyle">2. other arrays</button>
+                <button id="a3-3" class="btstyle">3. booleans</button>
+                <button id="a3-4" class="btstyle">4. all of above</button>
+            </div>
+        </div>
     </section>
+        <div id=email-container class="hide">
+             <h1 id="q1">All done!</h1>
+             <!-- Your final score is XYZ -->
+             <h3>score xxxxxxxxx</p>
+                <form action="email" class="form">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <button id="submit" class="btstyle" type="submit">Submit</button>
+                </form>
+        </div>
 
-    <section class="q2">
+        <div id=score-container class="hide">
+            <h1 id="q1">Highscores</h1>
+            <!-- Your final score is XYZ -->
+                <form action="score" class="endscore">
+                    <input type="score" name="score" id="scoresum">
+                </form>
+                    <button id="back" class="btstyle" type="back">Go Back</button>
+                    <button id="clearscore" class="btstyle" type="clearscore">Clear Highscores</button>
+        <div>
 
-    </section>
 
-    <section class="q3">
+        </div>
+    <section>
+
 
     </section>
 

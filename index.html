@@ -10,8 +10,8 @@
 <body>
     <header>
         <nav>
-            <li id="score">View Highscore</li>
-            <li id="time">Time: 10</li>
+            <li id="score">Highscore: 0</li>
+            <li id="time">Time: 20 sec</li>
         </nav>
     </header>
 
@@ -37,20 +37,40 @@
         <div id="question-container2">
             <h1 id="q2">The condition in an if / else statement is enclosed within _________.</h1>
             <div class="qblock">
-                <button id="a2-1" class="btstyle">1. quotes</button>
-                <button id="a2-2" class="btstyle">2. curly breackets</button>
-                <button id="a2-3" class="btstyle">3. parentheses</button>
-                <button id="a2-4" class="btstyle">4. square brackets</button>
+                <button onclick="handle2(event)" id="a2-1" class="btstyle">1. quotes</button>
+                <button onclick="handle2(event)" id="a2-2" class="btstyle">2. curly breackets</button>
+                <button onclick="handle2(event)" id="a2-3" class="btstyle">3. parentheses</button>
+                <button onclick="handle2(event)" id="a2-4" class="btstyle">4. square brackets</button>
             </div>
         </div>
 
         <div id="question-container3">
             <h1 id="q3">Arrays in JavaScript can be used to store _________.</h1>
             <div class="qblock">
-                <button id="a3-1" class="btstyle">1. numbers and strings</button>
-                <button id="a3-2" class="btstyle">2. other arrays</button>
-                <button id="a3-3" class="btstyle">3. booleans</button>
-                <button id="a3-4" class="btstyle">4. all of above</button>
+                <button onclick="handle3(event)" id="a3-1" class="btstyle">1. numbers and strings</button>
+                <button onclick="handle3(event)" id="a3-2" class="btstyle">2. other arrays</button>
+                <button onclick="handle3(event)" id="a3-3" class="btstyle">3. booleans</button>
+                <button onclick="handle3(event)" id="a3-4" class="btstyle">4. all of above</button>
+            </div>
+        </div>
+
+        <div id="question-container4">
+            <h1 id="q4">String values must be enclosed within _________ when being assigned to variables.</h1>
+            <div class="qblock">
+                <button onclick="handle4(event)" id="a4-1" class="btstyle">1. commas</button>
+                <button onclick="handle4(event)" id="a4-2" class="btstyle">2. curly breakets</button>
+                <button onclick="handle4(event)" id="a4-3" class="btstyle">3. quotes</button>
+                <button onclick="handle4(event)" id="a4-4" class="btstyle">4. parentheses</button>
+            </div>
+        </div>
+
+        <div id="question-container5">
+            <h1 id="q5">A very useful tool used during development and debugging for printing content to the debugger is:</h1>
+            <div class="qblock">
+                <button onclick="handle5(event)" id="a5-1" class="btstyle">1. JavaScript</button>
+                <button onclick="handle5(event)" id="a5-2" class="btstyle">2. terminal / bash</button>
+                <button onclick="handle5(event)" id="a5-3" class="btstyle">3. for loops</button>
+                <button onclick="handle5(event)" id="a5-4" class="btstyle">4. console.log</button>
             </div>
         </div>
 

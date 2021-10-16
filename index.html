@@ -10,8 +10,8 @@
 <body>
     <header>
         <nav>
-            <li id="score">Highscore: 0</li>
-            <li id="time">Time: 20 sec</li>
+            <li id="score">Score: 0</li>
+            <li id="time">Time: 60 sec</li>
         </nav>
     </header>
 
@@ -21,9 +21,16 @@
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
             <button id="start" class="btstyle">Start Quiz</button>
         </div>
+            
+        <!-- <div id="timeout">
+            <h1>Time out!</h1>
+            <p>No worries - Try it again! <br><br>
+                Press "Start Quiz" to start from the beginning.</p>
+            <button id="start-again" class="btstyle">Start Quiz</button>
+        </div> -->
     </section>
 
-    <section>
+    <section id="questions">
         <div id="question-container1" class="hide">
             <h1 id="q1">Commonly used data types DO NOT include:</h1>
             <div class="qblock">
@@ -76,18 +83,18 @@
 
     </section>
         <div id="email-container">
-             <h1 id="q1">All done!</h1>
+             <h1 id="q1">All done - or - Time out!</h1>
              <!-- Your final score is XYZ -->
-             <h3>Score text XYZ</p>
-                <form action="email" class="form">
+             <h3>Your score is <span id=show-score></span></h3>
+                <form action="email" class="form" id=form-email>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input id=email type="email" name="email"" placeholder="info@info.com">
                     <button id="submit" class="btstyle" type="submit">Submit</button>
                 </form>
         </div>
 
         <div id="score-container">
-            <h1 id="q1">Highscores</h1>
+            <h1 id="q1">Scores</h1>
             <!-- Your final score is XYZ -->
                 <form action="score" class="endscore">
                     <input type="score" name="score" id="scoresum">

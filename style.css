@@ -133,3 +133,7 @@ input,
 #back {
   margin-right: 30px;
 }
+
+input::placeholder {
+  padding-left: 10px;
+}

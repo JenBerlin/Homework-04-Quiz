@@ -12,13 +12,14 @@ var container3 = document.getElementById("question-container3")
 var container4 = document.getElementById("question-container4")
 var container5 = document.getElementById("question-container5")
 // var showScore = document.getElementById("show-score")
-var emailContainer = document.getElementById("email-container")
+var initialsContainer = document.getElementById("initials-container")
 var scorelContainer = document.getElementById("score-container")
 // target form
-var form = document.getElementById("form-email")
+var form = document.getElementById("form-initials")
 var submit = document.getElementById("submit")
 // target form input
-var email = document.getElementById("email")
+var initials = document.getElementById("initials")
+var showScore = document.getElementById("show-score")
 
 var timer;
 var count = 0
@@ -30,7 +31,7 @@ container2.style.display = "none"
 container3.style.display = "none"
 container4.style.display = "none"
 container5.style.display = "none"
-emailContainer.style.display = "none"
+initialsContainer.style.display = "none"
 scorelContainer.style.display = "none"
 
 function startTimer() {
@@ -120,22 +121,14 @@ function handle5(e) {
     var answer = e.target.id
     if(answer === "a5-4"){
         score += 10
-        container5.style.display = "none"
-        emailContainer.style.display = "block"
-        clearInterval(timer)
-        // would like to set it to 0
-    } 
+    }
     else {
         score -= 5
         count += 10
         document.getElementById(answer).style.backgroundColor = "red"
     }
     updateScore()
-}
-
-// Is not working
-function getScore(){
-    showScore.textContent = "Your final score: " + updateScore(value);
+    finishTheGame()
 }
 
 function startQuiz() {
@@ -147,26 +140,9 @@ function startQuiz() {
 function finishTheGame() {
     clearInterval(timer);
     questionsEl.style.display = "none"
-    emailContainer.style.display = "block"
+    initialsContainer.style.display = "block"
+    showScore.textContent = score
 }
-
-// var handleSubmit = function(event) {
-//     event.preventDefault();
-
-//     // get data from local storage
-
-//     // update the data from local storage
-
-//     // set local storage with updated date
-    
-// }
-
-// form.addEventListener("submit", handleSubmit);
-
-
-// function sendMessage() {
-//     timeEl.textContent = "Game over"
-// }
 
 startBtn.addEventListener("click", startQuiz);
 // startAgainBtn.addEventListener("click", startQuiz);

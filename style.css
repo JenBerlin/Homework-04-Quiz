@@ -67,7 +67,7 @@ p {
 #question-container3,
 #question-container4,
 #question-container5,
-#email-container,
+#initials-container,
 #score-container {
   margin: 0 200px 0 200px;
 }
@@ -136,4 +136,13 @@ input,
 
 input::placeholder {
   padding-left: 10px;
+}
+
+#show-score {
+  color: #8403ce;
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: x-large;
 }

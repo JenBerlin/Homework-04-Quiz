@@ -21,13 +21,6 @@
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
             <button id="start" class="btstyle">Start Quiz</button>
         </div>
-            
-        <!-- <div id="timeout">
-            <h1>Time out!</h1>
-            <p>No worries - Try it again! <br><br>
-                Press "Start Quiz" to start from the beginning.</p>
-            <button id="start-again" class="btstyle">Start Quiz</button>
-        </div> -->
     </section>
 
     <section id="questions">
@@ -82,20 +75,18 @@
         </div>
 
     </section>
-        <div id="email-container">
+        <div id="initials-container">
              <h1 id="q1">All done - or - Time out!</h1>
-             <!-- Your final score is XYZ -->
-             <h3>Your score is <span id=show-score></span></h3>
-                <form action="email" class="form" id=form-email>
-                    <label for="email">Email</label>
-                    <input id=email type="email" name="email"" placeholder="info@info.com">
+             <h3>Your score is <span id="show-score"></span></h3>
+                <form action="initials" class="form" id="form-initials">
+                    <label for="initials">Enter initials:</label>
+                    <input id="initials" type="initials" name="initials" placeholder="XY">
                     <button id="submit" class="btstyle" type="submit">Submit</button>
                 </form>
         </div>
 
         <div id="score-container">
             <h1 id="q1">Scores</h1>
-            <!-- Your final score is XYZ -->
                 <form action="score" class="endscore">
                     <input type="score" name="score" id="scoresum">
                 </form>
@@ -105,11 +96,6 @@
 
 
         </div>
-    <section>
-
-
-    </section>
-
     <script src="script.js"></script>
 </body>
 </html>

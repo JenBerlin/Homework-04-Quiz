@@ -34,6 +34,7 @@ JS
 // addEventListener to start the Quiz
 
 **Screenshots**
+/Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/1_Screen Shot 2021-10-17 at 18.17.59.png
 
 **Tech/Framwork used**
 HTML

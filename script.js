@@ -1,69 +1,46 @@
 var startBtn = document.getElementById("start")
-// var startAgainBtn = document.getElementById("start-again")
 var timeEl = document.getElementById("time")
 var gameTime = 60
 var scoreEl = document.getElementById("score")
 var landingPage = document.getElementById("landing-page")
-// var timeOutPage = document.getElementById("timeout")
 var questionsEl = document.querySelector("#questions")
 var container1 = document.getElementById("question-container1")
 var container2 = document.getElementById("question-container2")
 var container3 = document.getElementById("question-container3")
 var container4 = document.getElementById("question-container4")
 var container5 = document.getElementById("question-container5")
-// var showScore = document.getElementById("show-score")
 var initialsContainer = document.getElementById("initials-container")
 var finalContainer = document.getElementById("final-container")
 var InitialsSpan = document.getElementById("initials-input")
 
-// target form
-var formElementButton = document.getElementById("form-initials")
 
-// target form input
+var formElementButton = document.getElementById("form-initials")
 var initials = document.getElementById("initials")
 
 function renderLastInitials() {
 InitialsSpan.textContent = lastInitials.input
 }
 
-// on submit event handler function
 function handleSubmit(event) {
     event.preventDefault();
-    console.log("submit");
+}
 
-// get data from local storage
-const lastInitials = getDataFromLocalStorage();
-console.log(lastInitials)
+const allScores = JSON.parse(localStorage.getItem("scores"))||[];
 
-// get the user input value
 const input = initials.value;
+console.log(allScores)
+
+newScore = {
+    [input]: score
+}
+
+allScores.push(newScore)
 
 // show final page "get it back from hidden"
 
-// update the data from local storage
-lastInitials.initials = initials;
-
-// set local storage with updated data
-localStorage.setItem("lastInitials", JSON.stringify(lastInitials)
+localStorage.setItem("scores", JSON.stringify(allScores)
 );
 
-}
-
-function getDataFromLocalStorage() {
-    // get data from local storage by key name
-    var data = JSON.parse(localStorage.getItem(" "));
-    console.log(data)
-    // if null return set local storage with default value {} return {}
-    if(!data){
-    localStorage.setItem("lastInitials", JSON.stringify({}));
-    return{}
-}
-    else {
-    return data;
-}
-}
-
-// add event listener on form for submit event
 formElementButton.addEventListener("submit", handleSubmit)
 
 var showScore = document.getElementById("show-score")
@@ -74,7 +51,6 @@ var timer;
 var count = 0
 var score = 0
 
-// timeOutPage.style.display = "none"
 container1.style.display = "none"
 container2.style.display = "none"
 container3.style.display = "none"
@@ -202,7 +178,5 @@ submit.addEventListener("click", function() {
 });
 
 startBtn.addEventListener("click", startQuiz);
-// startAgainBtn.addEventListener("click", startQuiz);
-// // Why is it not working?
 
 

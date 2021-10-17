@@ -12,37 +12,8 @@ var container5 = document.getElementById("question-container5")
 var initialsContainer = document.getElementById("initials-container")
 var finalContainer = document.getElementById("final-container")
 var InitialsSpan = document.getElementById("initials-input")
-
-
 var formElementButton = document.getElementById("form-initials")
 var initials = document.getElementById("initials")
-
-function renderLastInitials() {
-InitialsSpan.textContent = lastInitials.input
-}
-
-function handleSubmit(event) {
-    event.preventDefault();
-}
-
-const allScores = JSON.parse(localStorage.getItem("scores"))||[];
-
-const input = initials.value;
-console.log(allScores)
-
-newScore = {
-    [input]: score
-}
-
-allScores.push(newScore)
-
-// show final page "get it back from hidden"
-
-localStorage.setItem("scores", JSON.stringify(allScores)
-);
-
-formElementButton.addEventListener("submit", handleSubmit)
-
 var showScore = document.getElementById("show-score")
 var initialsInput = document.getElementById("initials-input")
 var countInput = document.getElementById("count-input")
@@ -56,8 +27,8 @@ container2.style.display = "none"
 container3.style.display = "none"
 container4.style.display = "none"
 container5.style.display = "none"
-// initialsContainer.style.display = "none"
-// finalContainer.style.display = "none"
+initialsContainer.style.display = "none"
+finalContainer.style.display = "none"
 
 function startTimer() {
     count = 0;
@@ -169,14 +140,42 @@ function finishTheGame() {
     showScore.textContent = score
 }
 
+function handleSubmit(event) {
+    event.preventDefault();
+    initialsContainer.style.display = "none"
+    finalContainer.style.display = "block"
+
+const allScores = JSON.parse(localStorage.getItem("scores"))||[];
+
+const input = initials.value;
+console.log(allScores)
+
+newScore = {
+    [input]: score
+}
+
+allScores.push(newScore)
+
+localStorage.setItem("scores", JSON.stringify(allScores)
+);
+
+var largest = null;
+
+for (i=0; i<=largest;i++){
+    if (allScores[i]>largest) {
+        var largest=allScores[i];
+    }
+}
+console.log(largest);
+
+}
+
+formElementButton.addEventListener("submit", handleSubmit)
+
 submit.addEventListener("click", function() {
     if(initials){
     initialsInput.textContent = initials;
-    localStorage.setItem("initials", initials)
     }
-    
 });
 
 startBtn.addEventListener("click", startQuiz);
-
-

@@ -68,7 +68,7 @@ p {
 #question-container4,
 #question-container5,
 #initials-container,
-#score-container {
+#final-container {
   margin: 0 200px 0 200px;
 }
 
@@ -145,4 +145,10 @@ input::placeholder {
 
 h3 {
   font-size: x-large;
+}
+
+#final {
+  background-color: rgb(254, 203, 254);
+  width: 85%;
+  padding: 20px 20px 20px 20px;
 }

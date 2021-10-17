@@ -35,6 +35,13 @@ JS
 
 **Screenshots**
 /Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/1_Screen Shot 2021-10-17 at 18.17.59.png
+/Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/2_Screen Shot 2021-10-17 at 18.18.13.png
+/Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/3_Screen Shot 2021-10-17 at 18.18.22.png
+/Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/4_Screen Shot 2021-10-17 at 18.18.34.png
+/Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/5_Screen Shot 2021-10-17 at 18.18.48.png
+/Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/6_Screen Shot 2021-10-17 at 18.19.41.png
+/Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/7_Screen Shot 2021-10-17 at 18.19.50.png
+/Users/jennytschauschew/coding_bootcamp/homeworks/Homework-04-Quiz/ScreenShots/8_Screen Shot 2021-10-17 at 18.20.00.png
 
 **Tech/Framwork used**
 HTML

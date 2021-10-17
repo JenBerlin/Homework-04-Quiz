@@ -54,3 +54,6 @@ style.css
 script.js
 README.md
 Folder: ScreenShots
+
+GitHub: https://github.com/JenBerlin/Homework-04-Quiz
+GitHub Page: https://jenberlin.github.io/Homework-04-Quiz/
